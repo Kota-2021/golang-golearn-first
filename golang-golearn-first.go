@@ -20,12 +20,21 @@ func split(sum int) (x, y int) {
 
 // var c, python, java bool
 
-var i, j int = 1, 2
+//var i, j int = 1, 2
 
 func main() {
+	//11th
+	var i, j int = 1, 2
+	k := 3
+	c, python, java := true, false, "no!"
+
+	fmt.Println(i, j, k, c, python, java)
+
 	//10th
-	var c, python, java = true, false, "no!"
-	fmt.Println(i, j, c, python, java)
+	/*
+		var c, python, java = true, false, "no!"
+		fmt.Println(i, j, c, python, java)
+	*/
 
 	//9th
 	/*
