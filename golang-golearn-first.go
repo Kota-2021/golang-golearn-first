@@ -2,19 +2,33 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
+
+func add(x int, y int) int {
+	return x + y
+}
 
 func main() {
 
+	//5th
+	fmt.Println(add(42, 13))
+
+	//4th
+	//fmt.Println(math.pi) ← but code
+	/*
+		fmt.Println(math.Pi)
+	*/
+
 	// 3rd
 	//Sqrt returns the square root of x.
-	fmt.Printf("Now you have %e problems.\n", math.Sqrt(7))
-	fmt.Printf("Now you have %E problems.\n", math.Sqrt(7))
-	fmt.Printf("Now you have %f problems.\n", math.Sqrt(7))
-	fmt.Printf("Now you have %F problems.\n", math.Sqrt(7))
-	fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
-	fmt.Printf("Now you have %G problems.\n", math.Sqrt(7))
+	/*
+		fmt.Printf("Now you have %e problems.\n", math.Sqrt(7))
+		fmt.Printf("Now you have %E problems.\n", math.Sqrt(7))
+		fmt.Printf("Now you have %f problems.\n", math.Sqrt(7))
+		fmt.Printf("Now you have %F problems.\n", math.Sqrt(7))
+		fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
+		fmt.Printf("Now you have %G problems.\n", math.Sqrt(7))
+	*/
 
 	// 2nd
 	/*
