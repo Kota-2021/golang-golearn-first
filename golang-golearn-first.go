@@ -18,12 +18,20 @@ func split(sum int) (x, y int) {
 	return
 }
 
-var c, python, java bool
+// var c, python, java bool
+
+var i, j int = 1, 2
 
 func main() {
+	//10th
+	var c, python, java = true, false, "no!"
+	fmt.Println(i, j, c, python, java)
+
 	//9th
-	var i int
-	fmt.Println(i, c, python, java)
+	/*
+		var i int
+		fmt.Println(i, c, python, java)
+	*/
 
 	//8th
 	/*
