@@ -4,23 +4,31 @@ import (
 	"fmt"
 )
 
-func split(sum int) (x, y int) {
-	x = sum * 4 / 9
-	y = sum - x
-	return
+func add(x, y int) int {
+	return x + y
 }
 
 func swap(x, y string) (string, string) {
 	return y, x
 }
 
-func add(x, y int) int {
-	return x + y
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
 }
 
+var c, python, java bool
+
 func main() {
+	//9th
+	var i int
+	fmt.Println(i, c, python, java)
+
 	//8th
-	fmt.Println(split(17))
+	/*
+		fmt.Println(split(17))
+	*/
 
 	//7th
 	/*
