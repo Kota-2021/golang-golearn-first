@@ -4,14 +4,23 @@ import (
 	"fmt"
 )
 
-func add(x int, y int) int {
+func swap(x, y string) (string, string) {
+	return y, x
+}
+
+func add(x, y int) int {
 	return x + y
 }
 
 func main() {
+	//7th
+	a, b := swap("hello", "world")
+	fmt.Println(a, b)
 
-	//5th
-	fmt.Println(add(42, 13))
+	//5th 6th
+	/*
+		fmt.Println(add(42, 13))
+	*/
 
 	//4th
 	//fmt.Println(math.pi) ← but code
