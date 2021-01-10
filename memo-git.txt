@@ -38,6 +38,9 @@ git add memo-git.txt
 git commit -m "memo-git.txt add"
 ...
 ...
+git push origin baby
+// or 
+// git push origin main
 
 
 /*
