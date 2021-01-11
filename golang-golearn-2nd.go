@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math"
+	"runtime"
 )
 
 //No.4
@@ -41,19 +41,32 @@ func pow(x, n, lim float64) float64 {
 */
 
 //No.8
-func mySqrt(x float64) float64 {
+/* func mySqrt(x float64) float64 {
 	z := 1.0
 	for i := 0; i < 10; i++ {
 		z -= (z*z - x) / (2 * z)
 	}
 	return z
-}
+} */
 
 func main() {
+	//No.9
+	fmt.Print("Go runs on ")
+	switch os := runtime.GOOS; os {
+	case "darwin":
+		fmt.Println("OS X.")
+	case "linux":
+		fmt.Println("Linux.")
+	default:
+		// freebsd, openbsd,
+		// plan9, windows...
+		fmt.Printf("%s.\n", os)
+	}
+
 	//No.8
-	a := 2.0
+	/* a := 2.0
 	fmt.Println(mySqrt(a))
-	fmt.Println(math.Sqrt(a))
+	fmt.Println(math.Sqrt(a)) */
 
 	//No.7
 	/* fmt.Println(
