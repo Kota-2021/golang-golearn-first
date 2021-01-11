@@ -49,12 +49,21 @@ func pow(x, n, lim float64) float64 {
 } */
 
 func main() {
+	//No.13
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
+
 	//No.12
-	hello := []string{"Hello", "(o^｡^o)", ".", "World", "this", "like", "I", ".", "world"}
+	/* hello := []string{"Hello", "(o^｡^o)", ".", "World", "this", "like", "I", ".", "world"}
 	for i := 1; i < 9; i++ {
 		defer fmt.Println(hello[i])
 	}
-	fmt.Println(hello[0])
+	fmt.Println(hello[0]) */
 
 	//defer fmt.Println("world")
 	//fmt.Println("hello")
