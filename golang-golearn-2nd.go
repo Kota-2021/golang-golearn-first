@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 //No.4
@@ -50,8 +49,18 @@ func pow(x, n, lim float64) float64 {
 } */
 
 func main() {
+	//No.12
+	hello := []string{"Hello", "(o^｡^o)", ".", "World", "this", "like", "I", ".", "world"}
+	for i := 1; i < 9; i++ {
+		defer fmt.Println(hello[i])
+	}
+	fmt.Println(hello[0])
+
+	//defer fmt.Println("world")
+	//fmt.Println("hello")
+
 	//No.11
-	t := time.Now()
+	/* t := time.Now()
 	switch {
 	case t.Hour() < 12:
 		fmt.Println("Good morning!")
@@ -59,7 +68,7 @@ func main() {
 		fmt.Println("Good afternoon.")
 	default:
 		fmt.Println("Good evening.")
-	}
+	} */
 
 	//No.10
 	/* fmt.Println("When's Saturday?")
