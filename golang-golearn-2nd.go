@@ -50,8 +50,19 @@ func pow(x, n, lim float64) float64 {
 } */
 
 func main() {
+	//No.11
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Good morning!")
+	case t.Hour() < 17:
+		fmt.Println("Good afternoon.")
+	default:
+		fmt.Println("Good evening.")
+	}
+
 	//No.10
-	fmt.Println("When's Saturday?")
+	/* fmt.Println("When's Saturday?")
 	today := time.Now().Weekday()
 	switch time.Saturday {
 	case today + 0:
@@ -62,7 +73,7 @@ func main() {
 		fmt.Println("In two days.")
 	default:
 		fmt.Println("Too far away.")
-	}
+	} */
 
 	//No.9
 	/* fmt.Print("Go runs on ")
