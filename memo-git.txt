@@ -29,7 +29,7 @@ git --version
 
 /*** second time ***/
 
-git pull
+git pull .
 git branch baby
 git checkout baby
 git add golang-golearn-first.go
