@@ -27,6 +27,7 @@ func pow(x, n, lim float64) float64 {
 */
 
 //No.7
+/*
 func pow(x, n, lim float64) float64 {
 	if v := math.Pow(x, n); v < lim {
 		return v
@@ -35,14 +36,30 @@ func pow(x, n, lim float64) float64 {
 	}
 	// can't use v here, though
 	return lim
+
+}
+*/
+
+//No.8
+func mySqrt(x float64) float64 {
+	z := 1.0
+	for i := 0; i < 10; i++ {
+		z -= (z*z - x) / (2 * z)
+	}
+	return z
 }
 
 func main() {
+	//No.8
+	a := 2.0
+	fmt.Println(mySqrt(a))
+	fmt.Println(math.Sqrt(a))
+
 	//No.7
-	fmt.Println(
+	/* fmt.Println(
 		pow(3, 2, 10),
 		pow(3, 3, 20),
-	)
+	) */
 
 	//No.6
 	/*
