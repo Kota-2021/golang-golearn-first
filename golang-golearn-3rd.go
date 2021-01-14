@@ -9,16 +9,28 @@ import "fmt"
 } */
 
 //No.3
+/* type Vertex struct {
+	X int
+	Y int
+} */
+
+//No.4
 type Vertex struct {
 	X int
 	Y int
 }
 
 func main() {
-	//No.3
+	//No.4
 	v := Vertex{1, 2}
+	p := &v
+	p.X = 1e9
+	fmt.Println(v)
+
+	//No.3
+	/* v := Vertex{1, 2}
 	v.X = 4
-	fmt.Println(v.X)
+	fmt.Println(v.X) */
 
 	//No.2
 	/* fmt.Println(Vertex{1, 2})
