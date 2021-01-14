@@ -1,8 +1,12 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 	//No.1
-	/* i, j := 42, 2701
+	i, j := 42, 2701
 
 	p := &i         // point to i
 	fmt.Println(*p) // read i through the pointer
@@ -11,5 +15,5 @@ func main() {
 
 	p = &j         // point to j
 	*p = *p / 37   // divide j through the pointer
-	fmt.Println(j) // see the new value of j */
+	fmt.Println(j) // see the new value of j
 }
