@@ -2,17 +2,29 @@ package main
 
 import "fmt"
 
+//No.2
+/* type Vertex struct {
+	X int
+	Y int
+} */
+
+//No.3
 type Vertex struct {
 	X int
 	Y int
 }
 
 func main() {
+	//No.3
+	v := Vertex{1, 2}
+	v.X = 4
+	fmt.Println(v.X)
+
 	//No.2
-	fmt.Println(Vertex{1, 2})
+	/* fmt.Println(Vertex{1, 2})
 	m := Vertex{5, 10}
 	fmt.Println(m.X)
-	fmt.Println(m.Y)
+	fmt.Println(m.Y) */
 
 	//No.1
 	/* 	i, j := 42, 2701
