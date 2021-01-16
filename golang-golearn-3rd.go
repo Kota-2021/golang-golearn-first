@@ -49,6 +49,7 @@ func printSlice(s []int) {
 }
 
 func main() {
+
 	//No.15
 	var s []int
 	printSlice(s)
