@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 //No.2
 /* type Vertex struct {
@@ -38,14 +41,33 @@ var (
 } */
 
 //No.13
-func printSlice(s string, x []int) {
+/* func printSlice(s string, x []int) {
 	fmt.Printf("%s len=%d cap=%d %v\n",
 		s, len(x), cap(x), x)
-}
+} */
 
 func main() {
+	//No.14
+	// Create a tic-tac-toe board.
+	board := [][]string{
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
+	}
+
+	// The players take turns.
+	board[0][0] = "X"
+	board[2][2] = "O"
+	board[1][2] = "X"
+	board[1][0] = "O"
+	board[0][2] = "X"
+
+	for i := 0; i < len(board); i++ {
+		fmt.Printf("%s\n", strings.Join(board[i], " "))
+	}
+
 	//No.13
-	a := make([]int, 5)
+	/* a := make([]int, 5)
 	printSlice("a", a)
 
 	b := make([]int, 0, 5)
@@ -55,7 +77,7 @@ func main() {
 	printSlice("c", c)
 
 	d := c[2:5]
-	printSlice("d", d)
+	printSlice("d", d) */
 
 	//No.12
 	/* 	var s []int
