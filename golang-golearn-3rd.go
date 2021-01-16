@@ -37,13 +37,32 @@ var (
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 } */
 
+//No.13
+func printSlice(s string, x []int) {
+	fmt.Printf("%s len=%d cap=%d %v\n",
+		s, len(x), cap(x), x)
+}
+
 func main() {
+	//No.13
+	a := make([]int, 5)
+	printSlice("a", a)
+
+	b := make([]int, 0, 5)
+	printSlice("b", b)
+
+	c := b[:2]
+	printSlice("c", c)
+
+	d := c[2:5]
+	printSlice("d", d)
+
 	//No.12
-	var s []int
-	fmt.Println(s, len(s), cap(s))
-	if s == nil {
-		fmt.Println("nil!")
-	}
+	/* 	var s []int
+	   	fmt.Println(s, len(s), cap(s))
+	   	if s == nil {
+	   		fmt.Println("nil!")
+	   	} */
 
 	//No.11
 	/* 	s := []int{2, 3, 5, 7, 11, 13}
