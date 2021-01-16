@@ -33,8 +33,28 @@ var (
 ) */
 
 func main() {
+	//No.9
+	q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(q)
+
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println(r)
+
+	s := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println(s)
+
 	//No.8
-	names := [4]string{
+	/* names := [4]string{
 		"John",
 		"Paul",
 		"George",
@@ -48,7 +68,7 @@ func main() {
 
 	b[0] = "XXX"
 	fmt.Println(a, b)
-	fmt.Println(names)
+	fmt.Println(names) */
 
 	//No.7
 	/* primes := []int{2, 3, 5, 7, 11, 13}
