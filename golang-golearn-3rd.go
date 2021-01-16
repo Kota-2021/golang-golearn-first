@@ -33,15 +33,21 @@ var (
 ) */
 
 func main() {
+	//No.7
+	primes := []int{2, 3, 5, 7, 11, 13}
+
+	var s []int = primes[0:]
+	fmt.Println(s)
+
 	//No.6
-	var a [2]string
+	/* var a [2]string
 	a[0] = "Hello"
 	a[1] = "World"
 	fmt.Println(a[0], a[1])
 	fmt.Println(a)
 
 	primes := []int{2, 3, 5, 7, 11, 13}
-	fmt.Println(primes)
+	fmt.Println(primes) */
 
 	//No.5
 	/* fmt.Println(v1, p, v2, v3) */
