@@ -21,7 +21,7 @@ import "fmt"
 } */
 
 //No.5
-type Vertex struct {
+/* type Vertex struct {
 	X, Y int
 }
 
@@ -30,11 +30,21 @@ var (
 	v2 = Vertex{X: 1}  // Y:0 is implicit
 	v3 = Vertex{}      // X:0 and Y:0
 	p  = &Vertex{1, 2} // has type *Vertex
-)
+) */
 
 func main() {
+	//No.6
+	var a [2]string
+	a[0] = "Hello"
+	a[1] = "World"
+	fmt.Println(a[0], a[1])
+	fmt.Println(a)
+
+	primes := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(primes)
+
 	//No.5
-	fmt.Println(v1, p, v2, v3)
+	/* fmt.Println(v1, p, v2, v3) */
 
 	//No.4
 	/* v := Vertex{1, 2}
