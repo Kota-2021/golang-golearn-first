@@ -33,8 +33,20 @@ var (
 ) */
 
 func main() {
+	//No.10
+	s := []int{2, 3, 5, 7, 11, 13}
+
+	s = s[1:4]
+	fmt.Println(s)
+
+	s = s[:2]
+	fmt.Println(s)
+
+	s = s[1:]
+	fmt.Println(s)
+
 	//No.9
-	q := []int{2, 3, 5, 7, 11, 13}
+	/* q := []int{2, 3, 5, 7, 11, 13}
 	fmt.Println(q)
 
 	r := []bool{true, false, true, true, false, true}
@@ -51,7 +63,7 @@ func main() {
 		{11, false},
 		{13, true},
 	}
-	fmt.Println(s)
+	fmt.Println(s) */
 
 	//No.8
 	/* names := [4]string{
