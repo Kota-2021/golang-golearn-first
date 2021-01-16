@@ -44,27 +44,34 @@ var (
 } */
 
 //No.15
-func printSlice(s []int) {
+/* func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
-}
+} */
+
+//No.16
+var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
 
 func main() {
+	//No.16
+	for i, v := range pow {
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
 
 	//No.15
-	var s []int
-	printSlice(s)
+	/* 	var s []int
+	   	printSlice(s)
 
-	// append works on nil slices.
-	s = append(s, 0)
-	printSlice(s)
+	   	// append works on nil slices.
+	   	s = append(s, 0)
+	   	printSlice(s)
 
-	// The slice grows as needed.
-	s = append(s, 1)
-	printSlice(s)
+	   	// The slice grows as needed.
+	   	s = append(s, 1)
+	   	printSlice(s)
 
-	// We can add more than one element at a time.
-	s = append(s, 2, 3, 4)
-	printSlice(s)
+	   	// We can add more than one element at a time.
+	   	s = append(s, 2, 3, 4)
+	   	printSlice(s) */
 
 	//No.14
 	// Create a tic-tac-toe board.
