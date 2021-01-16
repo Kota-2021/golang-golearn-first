@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 //No.2
 /* type Vertex struct {
@@ -46,10 +43,31 @@ var (
 		s, len(x), cap(x), x)
 } */
 
+//No.15
+func printSlice(s []int) {
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+
 func main() {
+	//No.15
+	var s []int
+	printSlice(s)
+
+	// append works on nil slices.
+	s = append(s, 0)
+	printSlice(s)
+
+	// The slice grows as needed.
+	s = append(s, 1)
+	printSlice(s)
+
+	// We can add more than one element at a time.
+	s = append(s, 2, 3, 4)
+	printSlice(s)
+
 	//No.14
 	// Create a tic-tac-toe board.
-	board := [][]string{
+	/* board := [][]string{
 		[]string{"_", "_", "_"},
 		[]string{"_", "_", "_"},
 		[]string{"_", "_", "_"},
@@ -64,7 +82,7 @@ func main() {
 
 	for i := 0; i < len(board); i++ {
 		fmt.Printf("%s\n", strings.Join(board[i], " "))
-	}
+	} */
 
 	//No.13
 	/* a := make([]int, 5)
