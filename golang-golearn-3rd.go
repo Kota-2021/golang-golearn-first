@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//import "golang.org/x/tour/pic"
+
 //No.2
 /* type Vertex struct {
 	X int
@@ -49,13 +51,94 @@ var (
 } */
 
 //No.16
-var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+/* var pow = []int{1, 2, 4, 8, 16, 32, 64, 128} */
+
+//No.18
+/* func Pic(dx, dy int) [][]uint8 {
+	ss := make([][]uint8, dy)
+	for y := 0; y < dy; y++ {
+		s := make([]uint8, dx)
+		for x := 0; x < dx; x++ {
+			s[x] = uint8((x + y) / 2)
+		}
+		ss[y] = s
+	}
+	return ss
+} */
+
+//No.19
+/* type Vertex struct {
+	Lat, Long float64
+}
+
+var m map[string]Vertex */
+
+//No.20
+/* type Vertex struct {
+	Lat, Long float64
+}
+
+var m = map[string]Vertex{
+	"Bell Labs": Vertex{
+		40.68433, -74.39967,
+	},
+	"Google": Vertex{
+		37.42202, -122.08408,
+	},
+} */
+
+//No.21
+/* type Vertex struct {
+	Lat, Long float64
+}
+
+var m = map[string]Vertex{
+	"Bell Labs": {40.68433, -74.39967},
+	"Google":    {37.42202, -122.08408},
+} */
 
 func main() {
-	//No.16
-	for i, v := range pow {
-		fmt.Printf("2**%d = %d\n", i, v)
+	//No.22
+	m := make(map[string]int)
+
+	m["Answer"] = 42
+	fmt.Println("The value:", m["Answer"])
+
+	m["Answer"] = 48
+	fmt.Println("The value:", m["Answer"])
+
+	delete(m, "Answer")
+	fmt.Println("The value:", m["Answer"])
+
+	v, ok := m["Answer"]
+	fmt.Println("The value:", v, "Present?", ok)
+
+	//No.20 No.21
+	/* 	fmt.Println(m) */
+
+	//No.19
+	/* m = make(map[string]Vertex)
+	m["Bell Labs"] = Vertex{
+		40.68433, -74.39967,
 	}
+	fmt.Println(m["Bell Labs"]) */
+
+	//No.18
+	/* pic.Show(Pic) */
+
+	//No.17
+	/* pow := make([]int, 10)
+	for i := range pow {
+		pow[i] = 1 << uint(i) // == 2**i
+	}
+	for _, value := range pow {
+		fmt.Printf("%d\n", value)
+	} */
+
+	//No.16
+	/* for i, v := range pow {
+		fmt.Printf("2**%d = %d\n", i, v)
+	} */
 
 	//No.15
 	/* 	var s []int
