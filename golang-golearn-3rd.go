@@ -97,9 +97,72 @@ var m = map[string]Vertex{
 	"Google":    {37.42202, -122.08408},
 } */
 
+//No.23
+/* func WordCount(s string) map[string]int {
+	sl := strings.Fields(s)
+	t := make(map[string]int)
+	for _, n := range sl {
+		t[n] += 1
+	}
+	//return map[string]int{"x": 1}
+	return t
+} */
+
+//No.24
+/* func compute(fn func(float64, float64) float64) float64 {
+	return fn(3, 4)
+} */
+
+//No.25
+/* func adder() func(int) int {
+	sum := 0
+	return func(x int) int {
+		sum += x
+		return sum
+	}
+} */
+
+//No.26
+func fibonacci() func() int {
+	fi := [3]int{0, 1, 0}
+	return func() int {
+		fi[2] = fi[0] + fi[1]
+		fi[0] = fi[1]
+		fi[1] = fi[2]
+		return fi[2]
+	}
+}
+
 func main() {
+	//No.26
+	f := fibonacci()
+	for i := 0; i < 10; i++ {
+		fmt.Println(f())
+	}
+
+	//No.25
+	/* pos, neg := adder(), adder()
+	for i := 0; i < 10; i++ {
+		fmt.Println(
+			pos(i),
+			neg(-2*i),
+		)
+	} */
+
+	//No.24
+	/* hypot := func(x, y float64) float64 {
+		return math.Sqrt(x*x + y*y)
+	}
+	fmt.Println(hypot(5, 12))
+
+	fmt.Println(compute(hypot))
+	fmt.Println(compute(math.Pow)) */
+
+	//No.23
+	/* wc.Test(WordCount) */
+
 	//No.22
-	m := make(map[string]int)
+	/* m := make(map[string]int)
 
 	m["Answer"] = 42
 	fmt.Println("The value:", m["Answer"])
@@ -110,8 +173,8 @@ func main() {
 	delete(m, "Answer")
 	fmt.Println("The value:", m["Answer"])
 
-	v, ok := m["Answer"]
-	fmt.Println("The value:", v, "Present?", ok)
+	v, ok := m["Answer"] */
+	//fmt.Println("The value:", v, "Present?", ok)
 
 	//No.20 No.21
 	/* 	fmt.Println(m) */
